@@ -14,6 +14,7 @@ echo "1) Tester une IP"
 echo "2) Tester un port TCP"
 echo "3) Consulter les IP actives"
 echo "4) Générer un .txt depuis la BDD"
+echo "5) Exporter la BDD"
 echo "0) Retour au menu principal"
 echo -e "Veuillez choisir une option :"
 read choix
@@ -29,6 +30,9 @@ case $choix in
 		;;
 	4 )
 		bash outilsRx/generTxt.sh
+		;;
+	5 )
+		bash outilsRx/backup.sh
 		;;
 	0 )
 		quitter=0
